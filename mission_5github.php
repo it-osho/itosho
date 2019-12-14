@@ -139,7 +139,7 @@ $stmt = $pdo -> query($sql);
 <?php //表示機能
 $sql = 'SELECT * FROM mission5';
 $stmt = $pdo -> query($sql);
-$result = $stmt -> fetchAll();//fetchは1件しかデータを取得しませんでしたが、fetchAllは結果データを全件まとめて配列で取得します。*/
+$result = $stmt -> fetchAll();//fetchは1件しかデータを取得しませんでしたが、fetchAllは結果データを全件まとめて配列で取得します。
 foreach($result as $ele){ //$rowの中にはテーブルのカラム名が入る
 echo $ele['id'].':';
 echo $ele['name'].'<br>';
